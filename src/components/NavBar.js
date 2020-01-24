@@ -24,7 +24,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
   const toggle = () => setIsOpen(!isOpen);
-
+  
   const logoutWithRedirect = () =>
     logout({
       returnTo: window.location.origin
@@ -58,7 +58,7 @@ const NavBar = () => {
                     onClick={() => loginWithRedirect({})}
                     
                   >
-                    Log in
+                  Log in
                   </Button>
                 </NavItem>
               )}
